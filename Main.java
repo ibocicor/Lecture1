@@ -7,6 +7,13 @@ public class Main {
      *          false, otherwise
      */
     {
+        if (n < 2)
+            return false;
+        if (n == 2)
+            return true;
+        for (int i = 2; i < (int)Math.sqrt(n) + 1; i++)
+            if (n%i == 0)
+                return false;
         return true;
     }
 
